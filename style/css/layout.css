@@ -1,0 +1,389 @@
+/* Layout */
+
+.reset { 
+	clear:both; 
+	display:block; 
+	height:1px; 
+	margin:-1px 0 0 0; 
+	overflow: hidden; 
+}
+
+.hidden {display: none;}
+
+div { position:relative }
+
+/* Hackspace */
+
+body {
+	background: white;
+}
+
+#header_inner, #content_inner, #footer_inner {
+	width: 840px;
+	margin: 0 auto;
+	overflow: visible;
+}
+
+#header_outer {
+}
+
+#header_inner {
+}
+
+#content_outer, #content_inner {
+}
+
+#content_inner {
+	padding: 36px 0;
+}
+
+#footer_outer {
+}
+
+#footer_inner {
+	padding-top:26px;
+}
+
+/* Main Header + Nav */
+
+#header_inner {
+	height: 100px;
+}
+
+#header_inner h1 {
+	position: absolute;
+	top:18px;
+	width: 297px;
+	height:75px;
+}
+
+#header_inner h1 a {
+	display: block;
+	width: 297px;
+	height:75px;
+	background: url('../images/header_logo_bg.png');
+	text-indent: -5000em;
+}
+
+#main_navigation {
+	list-style: none;
+	position: absolute;
+	right:-18px;
+	top:18px;
+}
+
+#main_navigation li {
+	float: left;
+}
+
+#main_navigation li a, button {
+	display: block;
+	text-decoration: none;
+	background: #f08818;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 9px 13px 8px;
+	-webkit-border-radius : 9px;
+	-moz-border-radius : 9px;
+	margin-left: 9px;
+	border: 0;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.5px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  	-moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+#main_navigation li a:hover, #main_navigation li a:focus, button:hover, button:focus {
+	background: #bd6b13;
+}
+
+#main_navigation li a:active, button:active {
+	background: #bc161d;
+}
+
+#main_content {
+	float: left;
+	width:507px;
+}
+
+/* Widgets */
+
+#meta_content {
+	float:left;
+	width:261px;
+	margin-left: 72px;
+}
+
+#meta_content ul#widgets {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+#meta_content ul#widgets li {
+	margin:0;
+	padding: 18px;
+	list-style: none;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+	background: #eee;
+	margin-bottom: 18px;
+	position: relative;
+}
+
+#meta_content ul#widgets li#flickrrss {
+	padding-bottom: 36px;
+}
+
+#flickrrss h2 {
+	background:transparent url(../images/flickr.png) repeat scroll 0 0;
+	bottom:-20px;
+	height:9px;
+	left:18px;
+	position:absolute;
+	width:21px;
+	text-indent: -5000em;
+}
+
+
+#twitter_update_list {
+	margin: 0px 0px;
+}
+
+#meta_content #widgets #twitter_update_list li {
+	padding: 0px 0px;
+}
+
+/* Custom Page CSS */
+
+.post {
+	width: 507px;
+	margin-bottom: 36px;
+}
+
+.post .post_header {
+	background: #999;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+	width: 507px;
+	overflow: auto;
+	font-weight: bold;
+	margin:0 0 24px 0;
+}
+
+.post .post_header h2 {
+	float: left;
+	margin:0;
+	padding:0;
+}
+
+.post .post_header h2 a {
+	display: block;
+	background: #777;
+	padding: 9px 18px 11px;
+	margin:0;
+	width: 352px;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px 0 0 6px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #eee;
+}
+
+.post .post_header h2 a:hover, .post .post_header h2 a:focus {
+	background: #f08818;
+	color: white;
+}
+
+
+.post .post_header p {
+	float: right;
+	color: #ddd;
+	text-transform: uppercase;
+	padding: 15px 18px 0 0;
+	margin: 0;
+}
+
+.post .post_meta {
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+	background: #eee;
+	margin: 36px 0 0;
+	padding: 18px;
+	list-style: none;
+}
+
+#comment, .comment_wrap code {
+	width:467px;
+}
+
+
+
+.vimeo {
+	padding: 18px;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+	background: #333;
+	margin-bottom: 18px;
+}
+
+.prevnext {
+	width: 507px;
+	overflow: auto;
+	padding: 18px 0;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+	background: #ddd;
+	margin: 0 0 18px 0;	
+	list-style: none;
+}
+
+.prevnext a {
+	padding:18px;
+}
+
+.prevnext .prev {float: left;}
+.prevnext .next {float: right;}
+
+/* Comment Section */
+
+.comment_wrap ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.comment_wrap ol li {
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+	background: #eee;
+	padding: 18px 0 0 0;
+	width: 507px;
+	margin-bottom: 18px;
+}
+
+.comment_wrap ol li p {
+	margin: 0 18px 18px 18px;
+}
+.comment_wrap ol li p.moderated {
+	color: #999;
+}
+
+.comment_wrap ol li .meta p {
+	margin: 0;
+	color: #999;
+}
+
+.comment_wrap ol li .meta p a {
+	margin: 0;
+	color: #f3a0a4;
+}
+
+
+
+.comment_wrap ol li .meta p span {
+	float: right;
+}
+
+
+.comment_wrap ol li img.avatar {
+	margin: 0 9px 0 0;
+}
+
+.comment_wrap ol li div {
+	padding: 9px;
+	background: #f8f8f8;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 0 0 6px 6px;
+}
+
+/* Admin CSS */
+
+.edit_page_link {
+	position: absolute;
+	top:0px;
+	right:18px;
+}
+
+.edit_page_link a {
+	background: #235690;
+	display: block;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 6px 9px;
+	-webkit-border-radius : 6px;
+	-moz-border-radius : 6px;
+}
+
+.edit_page_link a:hover {
+	background: #124580;
+}
+
+.ddfm_errors {
+	background: #f5f5f5;	
+	border: 1px solid #ddd;
+	padding: 18px 18px 0;
+	-webkit-border-radius : 12px;
+	-moz-border-radius : 12px;
+	margin: 0 0 36px 0;
+	width: 364px;
+}
+
+.ddfm, .comment_wrap form {
+	width: 471px;
+	margin: 0 0 36px 0;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	background: #eee;
+	padding: 18px;
+	-webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.ddfm label {
+	font-size: 12px;
+	display: block;
+	width: 100px;
+	margin: 0 0 1px 0;
+	cursor: pointer;
+	padding: 3px 6px;
+}
+
+.ddfm input, .ddfm textarea {
+	font-family: inherit;
+	font-size: 14px;
+	width:458px;
+	margin: 0 0 6px 0;
+	border: 1px solid #aaa;
+	padding: 6px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#fm_verify {
+	width: 275px;
+	margin-left: 9px;
+}
+
+.ddfm p.fieldwrap img {
+	margin: 0;
+	padding: 3px;
+	background: red;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.ddfm input:focus, .ddfm textarea:focus {
+	border: 1px solid #3e6461;
+}
+
+.ddfm button, .comment_wrap button {
+	display: block;
+	clear:both;
+	margin: 18px 0 18px 0;
+}
