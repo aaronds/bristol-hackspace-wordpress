@@ -35,6 +35,8 @@
 		<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
 		<link rel="pingback" href="<?php //bloginfo('pingback_url'); ?>" />
 		<?php wp_head(); ?>
+		<script type = "text/javascript">
+		</script>
 	</head>
 	<body>
 		<div id="header_outer">
